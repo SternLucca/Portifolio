@@ -1,4 +1,5 @@
 import Projeto from './Projeto';
+import ContactForm from "./ContactForm";
 
 function Body() {
     return (
@@ -65,6 +66,8 @@ function Body() {
                     urlImg="https://raw.githubusercontent.com/SternLucca/Banana/refs/heads/main/banana.png" 
                     urlRepo="https://github.com/SternLucca/Banana/" 
                     urlSite="https://sternlucca.github.io/Banana/" />
+
+                <ContactForm />
 
             </div>
         </section>
