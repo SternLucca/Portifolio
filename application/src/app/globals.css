@@ -1,3 +1,8 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -103,6 +108,9 @@ p {
   border-radius: 30px;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .projetoLogo > img{
@@ -129,4 +137,54 @@ p {
 .links > p > a {
   text-decoration: underline;
   color: white;
+}
+
+.formularioArea{
+  width: 100%;
+  background-color: #26292d;
+  color: white;
+}
+
+#formTitulo{
+  margin: 2vw;
+}
+
+.formulario{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.formulario > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.formulario > div > input {
+  width: 35vw;
+  height: 5vh;
+}
+
+.formulario > textarea{
+  width: 72vw;
+  height: 10vh;
+}
+
+.formulario > div > button{
+  width: 100vw;
+  max-width: 200px;
+  height: 75px;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  font-size: larger;
+  font-weight: 700;
+  cursor: pointer;
 }

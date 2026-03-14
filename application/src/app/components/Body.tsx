@@ -67,9 +67,10 @@ function Body() {
                     urlRepo="https://github.com/SternLucca/Banana/" 
                     urlSite="https://sternlucca.github.io/Banana/" />
 
-                <ContactForm />
-
             </div>
+            
+            <ContactForm />
+
         </section>
     )
 }
