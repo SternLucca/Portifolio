@@ -87,13 +87,13 @@ p {
 }
 
 .projeto{
-  font-size: 30px;
   margin-bottom: 30px;
   margin-left: 1vmax;
   margin-right: 1vmax;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   flex-direction: column;
   gap: 1vh;
   width: calc(250px + 1vmax);
@@ -121,7 +121,7 @@ p {
 .projeto > h3 {
   margin: 0;
   color: white;
-  font-size: calc(9px + 1vmax);
+  font-size: calc(8px + 1vmax);
 }
 
 .links {

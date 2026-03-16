@@ -1,11 +1,6 @@
-function Projeto(props: {nome: string, urlImg: string, urlRepo: string, urlSite: string | undefined;}) {
-    let links: string = '';
-    if (props.urlSite === undefined) {
-        links = `<a href="${props.urlRepo}" target="_blank" rel="noopener noreferrer">Repo</a>`;
-    } else {
-        links = `<a href="${props.urlRepo}" target="_blank" rel="noopener noreferrer">Repo</a> • <a href="${props.urlSite}" target="_blank" rel="noopener noreferrer">Site</a>`;
-    }
-    
+import IProjeto from "./interfaces/IProjeto";
+
+function Projeto(props: IProjeto) {
     return (
         <div className="projeto">
             <div className="projetoLogo">
@@ -13,7 +8,20 @@ function Projeto(props: {nome: string, urlImg: string, urlRepo: string, urlSite:
             </div>
             <h3>{props.nome}</h3>
             <div className="links">
-                <p dangerouslySetInnerHTML={{ __html: links }} />
+                <p>
+                    <a  href={props.urlRepo}
+                        target="_blank"
+                        rel="noopener noreferrer">Repo</a>
+
+                    { props.urlSite && (
+                        <>
+                            <span> • </span>
+                            <a  href={props.urlSite} 
+                                target="_blank" 
+                                rel="noopener noreferrer">Site</a>
+                        </>
+                    )}
+                </p>
             </div>
         </div>
     )
