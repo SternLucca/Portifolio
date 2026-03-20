@@ -67,9 +67,9 @@ function Body() {
     ]
 
     return (
-        <section className="body">
-            <h2>Meus Projetos:</h2>
-            <div className="projetos">
+        <section className="flex flex-col w-full h-full bg-[#444850] min-h-[90vh]">
+            <h2 className='text-white p-[2vw] m-0 text-3xl'>Meus Projetos:</h2>
+            <div className="flex flex-wrap justify-evenly w-full">
                 
                 {projetos.map((projeto: IProjeto) =>(
                     <Projeto
